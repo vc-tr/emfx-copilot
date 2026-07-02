@@ -27,7 +27,7 @@ jobs:
 
       - name: Create venv & install (dev + api extras)
         run: |
-          uv venv
+          uv venv --clear
           uv pip install -e ".[dev,api]"
 
       - name: Lint (ruff)
